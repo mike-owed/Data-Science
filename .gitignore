@@ -1,33 +1,81 @@
-# 09/26/2018: Copied from Avengers repo then manipulated to preference
+###### 09/26/2018: Below are Copied from Avengers repo then manipulated to preference
 
 # Ignore Python-Compiler Files (are "byte codes" executed by Python's virtual machine.)
 *.pyc
 
-#ignore log files
+#ignore Django's log files
 *.log
 
-#ignore data files and csv files -- DO THIS ASD NEEDED if "sandbox" folder not an option
+# ignore sandbox directory and files -- DO THIS AS NEEDED whole folder will be ignored
+#sandbox/
+#sandbox/*
+
+#ignore data files and csv files -- DO THIS AS NEEDED if "sandbox" folder not an option
 #/assessment/csv_registration_files/*csv
 
-# ignore sandbox directory and files -- Files in this folder will be ignored
-sandbox/
-sandbox/*
+#Ignore local setting files -- DO THIS ASD NEEDED
+#baseproject/settings/local.py
 
 # ignore files from running server
 nohup.out
 
-#Ignore local setting files -- NOT SURE IF THIS IS CORRECT
-baseproject/settings/local.py
-
 # ignore migrations folders
 migrations/
 migrations/*
-
 
 # ignore IntelliJ directories and settings
 *.iml
 .idea/
 .idea/*
 
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
 
 
+###### 09/26/2018: Below are from an old repo "cs228-material" - Stanford cs228 Tutorials
+
+# ipython stuff
+*/.ipynb_checkpoints/*
+
+# latex stuff
+*.aux
+*.synctex.gz
+*.pdf
+
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
