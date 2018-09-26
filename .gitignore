@@ -1,0 +1,33 @@
+# 09/26/2018: Copied from Avengers repo then manipulated to preference
+
+# Ignore Python-Compiler Files (are "byte codes" executed by Python's virtual machine.)
+*.pyc
+
+#ignore log files
+*.log
+
+#ignore data files and csv files -- DO THIS ASD NEEDED if "sandbox" folder not an option
+#/assessment/csv_registration_files/*csv
+
+# ignore sandbox directory and files -- Files in this folder will be ignored
+sandbox/
+sandbox/*
+
+# ignore files from running server
+nohup.out
+
+#Ignore local setting files -- NOT SURE IF THIS IS CORRECT
+baseproject/settings/local.py
+
+# ignore migrations folders
+migrations/
+migrations/*
+
+
+# ignore IntelliJ directories and settings
+*.iml
+.idea/
+.idea/*
+
+
+
